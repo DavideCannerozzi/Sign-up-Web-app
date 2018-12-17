@@ -1,0 +1,131 @@
+*{margin:0px;padding:0px;}
+body{
+  font-family: 'Hind', sans-serif;
+  color:#fff;
+}
+.card,
+input,
+.btn{
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.16);
+}
+#sign-up,
+.title{
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+  text-align: center;
+}
+button,
+#underline{
+  cursor:pointer;
+}
+#underline{
+  text-decoration: underline;
+}
+.container{
+  display:flex;
+  width:90%;
+  margin:0 auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  width:23%;
+  height:480px;
+  background:-webkit-linear-gradient(#41CAA2, #185A9D);
+  background:linear-gradient(#41CAA2, #185A9D);
+  margin-top:30px;
+}
+.dog{
+  height:60px;
+  width:60px;
+  display:block;
+  margin:25px auto;
+  background-color:white;
+  mask:url(img/dog.svg) no-repeat center;
+  -webkit-mask: url(img/dog.svg) no-repeat center;
+}
+.title{
+  font-size:18px;
+  text-transform: capitalize;
+}
+.myform{
+  width:65%;
+  margin:0 auto;
+}
+.card input[type="date"]{
+  color:#fff;
+  text-align: center;
+}
+input,button{
+  border-radius:10px;
+}
+input{
+  width:100%;
+  color:#fff;
+  background:transparent;
+  padding:5px 0px;
+  border:1px solid white;
+}
+label{
+  font-size:9px;
+  }
+
+/***** Style Buttons *****/
+
+.btn{
+ width:55%;
+ display:block;
+ color:#1E6A9D;
+ padding:8px;
+ margin:35px auto;
+ border:none;
+ background:white;
+ border-radius:20px;
+}
+#sign-up{
+  font-size:12px;
+  margin-top:10px;
+}
+#btn-google,
+#btn-email{
+  width:75%;
+}
+#btn-email{
+  background-color:transparent;
+  border:1px solid #fff;
+  color:#fff;
+}
+.arrow{
+  float:right;
+  width:8px;
+}
+
+/****** media query *******/
+
+
+@media(max-width:500px){
+  .container{
+    flex-direction:column;
+    width:90%;
+  }
+  .card{
+    width:80%;
+  }
+  #btn-google,
+  #btn-email,
+  #sign-up{
+    margin-top:60px;
+  }
+  .btn{
+    width:40%;
+  }
+}
+
+@media(min-width:500px) and (max-width:1000px){
+  .container{
+    flex-flow:row wrap;
+  }
+  .card{
+    width:45%;
+  }
+}
